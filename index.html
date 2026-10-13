@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
+  <base href="https://api.tech.multibrain.cloud/storage/bfa_generated/1/alerte-arnaques-senegal-plateforme-de-signalement-vigilance-146aC5.html"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alerte Arnaques Sénégal — Signalez & Protégez-vous</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://tech.multibrain.cloud/multibrain-cloud-db.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { font-family: 'Plus Jakarta Sans', sans-serif; }
+  html { scroll-behavior: smooth; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .hero-bg { background: linear-gradient(135deg, #0A0F1E 0%, #131a33 55%, #1a1140 100%); }
+  .glow { box-shadow: 0 0 60px -12px rgba(124, 58, 237, 0.55); }
+  .card-hover { transition: all 0.3s ease; }
+  .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 45px -18px rgba(124,58,237,0.35); }
+  .grad-text { background: linear-gradient(90deg, #7C3AED, #2563EB); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+  .floaty { animation: floaty 5s ease-in-out infinite; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-up { animation: fadeUp 0.9s ease both; }
+  .img-zoom { overflow: hidden; }
+  .img-zoom img { transition: transform 0.5s ease; }
+  .img-zoom:hover img { transform: scale(1.06); }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #0A0F1E; }
+  ::-webkit-scrollbar-thumb { background: #7C3AED; border-radius: 10px; }
+</style>
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Alerte Arnaques Sénégal — Plateforme de Signalement &amp; Vigilance">
+<meta name="theme-color" content="#EA580C">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22pwaGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23EA580C%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23431407%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22128%22%20fill%3D%22url%28%23pwaGrad%29%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2254%25%22%20font-size%3D%22250%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22central%22%3E%F0%9F%8D%BD%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22pwaGrad%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23EA580C%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23431407%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22128%22%20fill%3D%22url%28%23pwaGrad%29%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2254%25%22%20font-size%3D%22250%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22central%22%3E%F0%9F%8D%BD%EF%B8%8F%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="manifest" href="data:application/manifest+json;utf8,%7B%22name%22%3A%22Alerte%20Arnaques%20S%C3%A9n%C3%A9gal%20%E2%80%94%20Plateforme%20de%20Signalement%20%26%20Vigilance%22%2C%22short_name%22%3A%22Alerte%20Arnaques%20%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23431407%22%2C%22theme_color%22%3A%22%23EA580C%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520viewBox%253D%25220%25200%2520512%2520512%2522%2520width%253D%2522512%2522%2520height%253D%2522512%2522%253E%253Cdefs%253E%253ClinearGradient%2520id%253D%2522pwaGrad%2522%2520x1%253D%25220%2525%2522%2520y1%253D%25220%2525%2522%2520x2%253D%2522100%2525%2522%2520y2%253D%2522100%2525%2522%253E%253Cstop%2520offset%253D%25220%2525%2522%2520stop-color%253D%2522%2523EA580C%2522%252F%253E%253Cstop%2520offset%253D%2522100%2525%2522%2520stop-color%253D%2522%2523431407%2522%252F%253E%253C%252FlinearGradient%253E%253C%252Fdefs%253E%253Crect%2520width%253D%2522512%2522%2520height%253D%2522512%2522%2520rx%253D%2522128%2522%2520fill%253D%2522url%2528%2523pwaGrad%2529%2522%252F%253E%253Ctext%2520x%253D%252250%2525%2522%2520y%253D%252254%2525%2522%2520font-size%253D%2522250%2522%2520text-anchor%253D%2522middle%2522%2520dominant-baseline%253D%2522central%2522%253E%25F0%259F%258D%25BD%25EF%25B8%258F%253C%252Ftext%253E%253C%252Fsvg%253E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%20maskable%22%7D%5D%7D">
+</head>
+<body class="bg-[#0A0F1E] text-slate-200 antialiased">
+
+<!-- ===== NAVBAR ===== -->
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/5 backdrop-blur-lg bg-[#0A0F1E]/80">
+  <nav class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-16 lg:h-20">
+    <a href="#accueil" class="flex items-center gap-2.5 font-extrabold text-lg lg:text-xl text-white">
+      <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#7C3AED] to-[#2563EB] grid place-items-center glow">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+      </span>
+      Alerte<span class="grad-text">Arnaques</span>
+    </a>
+    <ul class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+      <li><a href="#signalements" class="hover:text-white transition">Signalements</a></li>
+      <li><a href="#types" class="hover:text-white transition">Types d'arnaques</a></li>
+      <li><a href="#fonctionnement" class="hover:text-white transition">Comment ça marche</a></li>
+      <li><a href="#temoignages" class="hover:text-white transition">Témoignages</a></li>
+      <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+    </ul>
+    <div class="flex items-center gap-3">
+      <button onclick="openModal()" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#7C3AED] to-[#2563EB] text-white text-sm font-semibold hover:shadow-lg hover:shadow-[#7C3AED]/40 transition">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Signaler
+      </button>
+      <button onclick="toggleMenu()" class="lg:hidden text-white p-2" aria-label="Menu">
+        <svg id="menuIcon" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="lg:hidden hidden bg-[#0A0F1E] border-t border-white/5 px-5 py-4 space-y-1">
+    <a href="#signalements" onclick="toggleMenu()" class="block py-2.5 text-slate-300 hover:text-white">Signalements</a>
+    <a href="#types" onclick="toggleMenu()" class="block py-2.5 text-slate-300 hover:text-white">Types d'arnaques</a>
+    <a href="#fonctionnement" onclick="toggleMenu()" class="block py-2.5 text-slate-300 hover:text-white">Comment ça marche</a>
+    <a href="#temoignages" onclick="toggleMenu()" class="block py-2.5 text-slate-300 hover:text-white">Témoignages</a>
+    <a href="#faq" onclick="toggleMenu()" class="block py-2.5 text-slate-300 hover:text-white">FAQ</a>
+    <button onclick="openModal(); toggleMenu()" class="w-full mt-2 py-3 rounded-xl bg-gradient-to-r from-[#7C3AED] to-[#2563EB] text-white font-semibold">Signaler une arnaque</button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="accueil" class="hero-bg relative overflow-hidden pt-28 lg:pt-36 pb-20 lg:pb-28">
+  <div class="absolute -top-24 -right-24 w-96 h-96 bg-[#7C3AED]/20 rounded-full blur-3xl"></div>
+  <div class="absolute top-40 -left-24 w-80 h-80 bg-[#2563EB]/20 rounded-full blur-3xl"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative grid lg:grid-cols-2 gap-14 items-center">
+    <div class="fade-up">
+      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-[#a78bfa] mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Plateforme citoyenne de vigilance — Sénégal
+      </span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] mb-6">
+        Ensemble, <span class="grad-text">stoppons les arnaques</span> au Sénégal.
+      </h1>
+      <p class="text-slate-400 text-lg leading-relaxed mb-8 max-w-xl">
+        Signalez une fraude en ligne, un faux vendeur, une escroquerie Mobile Money ou un faux ordre de virement. Vos alertes protègent toute la communauté et aident à tracer les réseaux de fraude.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-10">
+        <button onclick="openModal()" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#7C3AED] to-[#2563EB] text-white font-semibold hover:shadow-xl hover:shadow-[#7C3AED]/40 transition flex items-center gap-2">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          Signaler une arnaque
+        </button>
+        <a href="#signalements" class="px-7 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-semibold hover:bg-white/10 transition flex items-center gap-2">
+          Voir les alertes
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+      <div class="grid grid-cols-3 gap-6 max-w-lg">
+        <div>
+          <p class="text-3xl font-extrabold text-white counter" data-target="1284">0</p>
+          <p class="text-xs text-slate-500 mt-1">Signalements</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-white counter" data-target="47">0</p>
+          <p class="text-xs text-slate-500 mt-1">Réseaux identifiés</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-white"><span class="counter" data-target="92">0</span>%</p>
+          <p class="text-xs text-slate-500 mt-1">Victimes averties</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative fade-up" style="animation-delay:0.2s">
+      <div class="img-zoom rounded-3xl border border-white/10 glow">
+        <img src="https://images.pexels.com/photos/30535634/pexels-photo-30535634.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Utilisateur de Mobile Money vérifiant une transaction" class="w-full h-[420px] lg:h-[480px] object-cover">
+      </div>
+      <div class="absolute -bottom-6 -left-6 bg-[#0A0F1E] border border-white/10 rounded-2xl p-4 shadow-2xl floaty max-w-[220px]">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-xl bg-red-500/15 grid place-items-center">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#f87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </span>
+          <div>
+            <p class="text-white text-sm font-bold">Alerte active</p>
+            <p class="text-slate-400 text-xs">Faux vendeur Wave</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BANDEAU CONFIANCE ===== -->
+<section class="bg-white/[0.02] border-y border-white/5 py-8">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-slate-500 text-sm font-medium">
+    <span class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Signalements 100% anonymes</span>
+    <span class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Modération communautaire</span>
+    <span class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Mise à jour en temps réel</span>
+    <span class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Assistance victimes</span>
+  </div>
+</section>
+
+<!-- ===== SIGNALEMENTS RÉCENTS ===== -->
+<section id="signalements" class="py-20 lg:py-28 bg-[#0A0F1E]">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <span class="text-[#a78bfa] font-semibold text-sm uppercase tracking-widest">Vigilance en direct</span>
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-white mt-3 mb-4">Signalements récents de la communauté</h2>
+      <p class="text-slate-400">Ces alertes proviennent des citoyens. Vérifiez toujours avant de payer ou de partager vos informations.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="alertsGrid"></div>
+    <div class="text-center mt-12 reveal">
+      <button onclick="openModal()" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-semibold hover:bg-white/10 transition">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        Ajouter mon signalement
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TYPES D'ARNAQUES ===== -->
+<section id="types" class="py-20 lg:py-28 bg-white/[0.02] border-y border-white/5">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <span class="text-[#60a5fa] font-semibold text-sm uppercase tracking-widest">Connaître pour se protéger</span>
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-white mt-3 mb-4">Les arnaques les plus courantes</h2>
+      <p class="text-slate-400">Reconnaître le schéma, c'est déjà s'en protéger. Voici les fraudes les plus signalées au Sénégal.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-7">
+        <span class="w-12 h-12 rounded-xl bg-[#7C3AED]/15 grid place-items-center mb-5">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+        </span>
+        <h3 class="text-white font-bold text-lg mb-2">Faux Mobile Money</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Faux SMS de Wave, Orange Money ou Free Money annonçant un gain ou un blocage de compte pour soutirer votre code PIN.</p>
+      </div>
+      <div class="reveal card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-7">
+        <span class="w-12 h-12 rounded-xl bg-[#2563EB]/15 grid place-items-center mb-5">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><polyline points="4 4 12 13 20 4"></polyline></svg>
+        </span>
+        <h3 class="text-white font-bold text-lg mb-2">Phishing par e-mail</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Faux messages de banques, opérateurs ou administrations poussant à cliquer vers un site cloné pour voler vos identifiants.</p>
+      </div>
+      <div class="reveal card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-7">
+        <span class="w-12 h-12 rounded-xl bg-emerald-500/15 grid place-items-center mb-5">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        </span>
+        <h3 class="text-white font-bold text-lg mb-2">Faux vendeurs en ligne</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Vendeurs de Facebook, WhatsApp ou Instagram encaissant le paiement puis disparaissant, ou livrant un produit contrefait.</p>
+      </div>
+      <div class="reveal card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-7">
+        <span class="w-12 h-12 rounded-xl bg-red-500/15 grid place-items-center mb-5">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#f87171" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        </span>
+        <h3 class="text-white font-bold text-lg mb-2">Faux ordres de virement</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Usurpation d'un fournisseur ou dirigeant par e-mail pour faire payer une facture sur un mauvais compte bancaire.</p>
+      </div>
+      <div class="reveal card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-7">
+        <span class="w-12 h-12 rounded-xl bg-amber-500/15 grid place-items-center mb-5">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </span>
+        <h3 class="text-white font-bold text-lg mb-2">Faux investissements</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Promesses de rendements rapides (crypto, trading, MLM) demandant un dépôt initial qui ne revient jamais.</p>
+      </div>
+      <div class="reveal card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-7">
+        <span class="w-12 h-12 rounded-xl bg-cyan-500/15 grid place-items-center mb-5">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </span>
+        <h3 class="text-white font-bold text-lg mb-2">Appels & faux proches</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Appels d'un "proche en détresse" ou d'un faux agent demandant des codes de transfert pour vider un compte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMMENT ÇA MARCHE ===== -->
+<section id="fonctionnement" class="py-20 lg:py-28 bg-[#0A0F1E]">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal img-zoom rounded-3xl border border-white/10 overflow-hidden">
+      <img src="https://images.pexels.com/photos/12478756/pexels-photo-12478756.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Communauté sénégalaise unie contre les arnaques" class="w-full h-[460px] object-cover">
+    </div>
+    <div class="reveal">
+      <span class="text-[#a78bfa] font-semibold text-sm uppercase tracking-widest">Simple & rapide</span>
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-white mt-3 mb-8">Comment signaler en 3 étapes</h2>
+      <div class="space-y-8">
+        <div class="flex gap-5">
+          <span class="flex-shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-[#7C3AED] to-[#2563EB] grid place-items-center text-white font-bold">1</span>
+          <div>
+            <h3 class="text-white font-bold text-lg mb-1">Décrivez l'arnaque</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Renseignez le type de fraude, le numéro ou compte utilisé, le montant concerné et les détails de l'échange. Restez anonyme si vous préférez.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="flex-shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-[#7C3AED] to-[#2563EB] grid place-items-center text-white font-bold">2</span>
+          <div>
+            <h3 class="text-white font-bold text-lg mb-1">Vérification communautaire</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Les autres utilisateurs ayant subi la même fraude peuvent confirmer, ce qui renforce la fiabilité de l'alerte et permet de tracer les réseaux.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="flex-shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-[#7C3AED] to-[#2563EB] grid place-items-center text-white font-bold">3</span>
+          <div>
+            <h3 class="text-white font-bold text-lg mb-1">Alerte diffusée</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Le signalement apparaît publiquement sur la plateforme et peut être partagé sur WhatsApp et les réseaux pour avertir les proches.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TÉMOIGNAGES ===== -->
+<section id="temoignages" class="py-20 lg:py-28 bg-white/[0.02] border-y border-white/5">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <span class="text-[#a78bfa] font-semibold text-sm uppercase tracking-widest">Ils se sont protégés</span>
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-white mt-3 mb-4">Ce que dit la communauté</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="reveal card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-7">
+        <div class="flex gap-1 mb-4 text-amber-400">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed mb-5">"J'ai failli envoyer 150 000 FCFA à un faux vendeur de téléphone sur Facebook. En vérifiant son numéro ici, j'ai vu 3 signalements. Merci, j'ai économisé mon argent."</p>
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-gradient-to-br from-[#7C3AED] to-[#2563EB] grid place-items-center text-white font-bold text-sm">AD</span>
+          <div><p class="text-white text-sm font-semibold">Awa D.</p><p class="text-slate-500 text-xs">Dakar — Mermoz</p></div>
+        </div>
+      </div>
+      <div class="reveal card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-7">
+        <div class="flex gap-1 mb-4 text-amber-400">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12e="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed mb-5">"Un faux SMS Orange Money me demandait mon code PIN. J'ai partagé l'alerte dans mon groupe familial, deux de mes cousins ont été sauvés du même piège la semaine suivante."</p>
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-gradient-to-br from-[#2563EB] to-[#7C3AED] grid place-items-center text-white font-bold text-sm">MD</span>
+          <div><p class="text-white text-sm font-semibold">Mamadou D.</p><p class="text-slate-500 text-xs">Thiès</p></div>
+        </div>
+      </div>
+      <div class="reveal card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-7">
+        <div class="flex gap-1 mb-4 text-amber-400">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed mb-5">"En tant que commerçant à Kaolack, j'ai reçu un faux ordre de virement d'un 'fournisseur'. J'ai signalé le compte bancaire utilisé, ça peut aider d'autres commerçants."</p>
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-[#2563EB] grid place-items-center text-white font-bold text-sm">CN</span>
+          <div><p class="text-white text-sm font-semibold">Cheikh N.</p><p class="text-slate-500 text-xs">Kaolack — Commerçant</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="py-20 lg:py-28 bg-[#0A0F1E]">
+  <div class="max-w-3xl mx-auto px-5 lg:px-8">
+    <div class="reveal text-center mb-14">
+      <span class="text-[#60a5fa] font-semibold text-sm uppercase tracking-widest">Questions fréquentes</span>
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-white mt-3 mb-4">Vous avez des doutes ?</h2>
+    </div>
+    <div class="space-y-4" id="faqList">
+      <div class="reveal bg-[#0d1428] border border-white/10 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="text-white font-semibold">Mon signalement est-il vraiment anonyme ?</span>
+          <svg class="faq-icon flex-shrink-0 transition-transform" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed">Oui. Aucune donnée personnelle n'est obligatoire pour publier une alerte. Vous pouvez signaler uniquement les informations de l'arnaqueur (numéro, compte, pseudo) sans révéler votre identité.</div>
+      </div>
+      <div class="reveal bg-[#0d1428] border border-white/10 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="text-white font-semibold">Puis-je signaler sans avoir été victime ?</span>
+          <svg class="faq-icon flex-shrink-0 transition-transform" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed">Absolument. Si vous avez reçu un message suspect, un appel frauduleux ou repéré un faux profil, signalez-le. La prévention commence par le partage d'information.</div>
+      </div>
+      <div class="reveal bg-[#0d1428] border border-white/10 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="text-white font-semibold">Que faire si j'ai déjà été victime ?</span>
+          <svg class="faq-icon flex-shrink-0 transition-transform" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed">1) Contactez immédiatement votre opérateur (Wave, Orange Money, Free Money) pour tenter de bloquer la transaction. 2) Portez plainte au commissariat ou à la brigade de gendarmerie. 3) Signalez ici pour avertir la communauté. 4) Rassemblez toutes les preuves : captures d'écran, numéros, références de transaction.</div>
+      </div>
+      <div class="reveal bg-[#0d1428] border border-white/10 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="text-white font-semibold">Comment vérifier un vendeur avant d'acheter ?</span>
+          <svg class="faq-icon flex-shrink-0 transition-transform" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed">Recherchez son numéro ou son nom sur cette plateforme. Demandez des avis clients réels, privilégiez la livraison avec paiement à la réception quand c'est possible, et méfiez-vous des prix anormalement bas.</div>
+      </div>
+      <div class="reveal bg-[#0d1428] border border-white/10 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="text-white font-semibold">Les signalements sont-ils transmis aux autorités ?</span>
+          <svg class="faq-icon flex-shrink-0 transition-transform" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed">La plateforme est citoyenne et indépendante. Les signalements les plus documentés peuvent être transmis aux structures compétentes (Police, Gendarmerie, ARTP) lorsque les victimes en font la demande formelle.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / CTA ===== -->
+<section id="contact" class="py-20 lg:py-28 bg-white/[0.02] border-t border-white/5">
+  <div class="max-w-5xl mx-auto px-5 lg:px-8">
+    <div class="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#7C3AED] to-[#2563EB] p-10 lg:p-14 text-center">
+      <div class="absolute -top-16 -right-16 w-64 h-64 bg-white/10 rounded-full blur-2xl"></div>
+      <div class="relative">
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4">Votre vigilance sauve des familles.</h2>
+        <p class="text-white/80 max-w-2xl mx-auto mb-8">Chaque signalement peut éviter à une autre personne de perdre ses économies. Prenez 2 minutes pour alerter la communauté.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button onclick="openModal()" class="px-8 py-3.5 rounded-xl bg-white text-[#0A0F1E] font-bold hover:bg-slate-100 transition shadow-lg">
+            Signaler maintenant
+          </button>
+          <a href="mailto:contact@alertearnaques.sn" class="px-8 py-3.5 rounded-xl bg-white/10 border border-white/30 text-white font-semibold hover:bg-white/20 transition">
+            Nous contacter
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-[#070b16] border-t border-white/5 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
+      <div class="md:col-span-1">
+        <a href="#accueil" class="flex items-center gap-2.5 font-extrabold text-lg text-white mb-4">
+          <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#7C3AED] to-[#2563EB] grid place-items-center">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </span>
+          Alerte<span class="grad-text">Arnaques</span>
+        </a>
+        <p class="text-slate-500 text-sm leading-relaxed">Plateforme citoyenne de signalement des arnaques au Sénégal. Ensemble, protégeons-nous.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Navigation</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li><a href="#signalements" class="hover:text-white transition">Signalements</a></li>
+          <li><a href="#types" class="hover:text-white transition">Types d'arnaques</a></li>
+          <li><a href="#fonctionnement" class="hover:text-white transition">Comment ça marche</a></li>
+          <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Urgences</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#a78bfa" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Police : 17 / 800 00 20 20</li>
+          <li class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#a78bfa" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Gendarmerie : 800 00 20 20</li>
+          <li class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#a78bfa" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Wave / OM : 3 3 3 3</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Contact</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#a78bfa" stroke-width="1.8"><path d="M4 4h16v16H4z"></path><polyline points="4 4 12 13 20 4"></polyline></svg> contact@alertearnaques.sn</li>
+          <li class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#a78bfa" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Dakar, Sénégal</li>
+          <li class="flex items-center gap-2"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#a78bfa" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Disponible 24h/24</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-slate-500 text-sm">© <span id="year"></span> AlerteArnaques Sénégal — Plateforme citoyenne. Tous droits réservés.</p>
+      <div class="flex items-center gap-4">
+        <button onclick="resetDB()" class="text-xs text-slate-500 hover:text-red-400 transition underline decoration-dotted">Réinitialiser les données</button>
+        <span class="text-xs text-slate-600">Fait avec vigilance 🇸🇳</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MODAL SIGNALEMENT ===== -->
+<div id="reportModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+  <div class="bg-[#0d1428] border border-white/10 rounded-3xl w-full max-w-lg max-h-[90vh] overflow-y-auto shadow-2xl">
+    <div class="flex items-center justify-between p-6 border-b border-white/10 sticky top-0 bg-[#0d1428] z-10">
+      <h3 class="text-white font-bold text-xl">Signaler une arnaque</h3>
+      <button onclick="closeModal()" class="text-slate-400 hover:text-white p-1">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <form id="reportForm" class="p-6 space-y-5">
+      <div>
+        <label class="block text-sm font-semibold text-slate-300 mb-2">Type d'arnaque *</label>
+        <select id="fType" required class="w-full bg-[#0A0F1E] border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#7C3AED] transition">
+          <option value="">— Choisir —</option>
+          <option>Faux Mobile Money</option>
+          <option>Phishing par e-mail</option>
+          <option>Faux vendeur en ligne</option>
+          <option>Faux ordre de virement</option>
+          <option>Faux investissement</option>
+          <option>Appel / faux proche</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-slate-300 mb-2">Numéro / Compte / Pseudo utilisé *</label>
+        <input id="fCible" required type="text" placeholder="Ex: +221 77 000 00 00 ou @faux_vendeur" class="w-full bg-[#0A0F1E] border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-[#7C3AED] transition">
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-semibold text-slate-300 mb-2">Montant (FCFA)</label>
+          <input id="fMontant" type="number" min="0" placeholder="Ex: 150000" class="w-full bg-[#0A0F1E] border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-[#7C3AED] transition">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-300 mb-2">Ville</label>
+          <input id="fVille" type="text" placeholder="Ex: Dakar" class="w-full bg-[#0A0F1E] border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-[#7C3AED] transition">
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-slate-300 mb-2">Description de l'arnaque *</label>
+        <textarea id="fDesc" required rows="4" placeholder="Décrivez ce qui s'est passé : comment le contact a eu lieu, ce qui a été demandé, etc." class="w-full bg-[#0A0F1E] border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-[#7C3AED] transition resize-none"></textarea>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-slate-300 mb-2">Votre nom (optionnel — restez anonyme si vous préférez)</label>
+        <input id="fNom" type="text" placeholder="Anonyme" class="w-full bg-[#0A0F1E] border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-[#7C3AED] transition">
+      </div>
+      <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#7C3AED] to-[#2563EB] text-white font-bold hover:shadow-lg hover:shadow-[#7C3AED]/40 transition">
+        Publier le signalement
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div id="toast" class="fixed bottom-6 right-6 z-[200] hidden">
+  <div class="bg-[#0d1428] border border-[#7C3AED]/40 rounded-xl px-5 py-4 shadow-2xl flex items-center gap-3 max-w-sm">
+    <span class="w-8 h-8 rounded-lg bg-emerald-500/15 grid place-items-center flex-shrink-0">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#34d399" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </span>
+    <p id="toastMsg" class="text-white text-sm font-medium"></p>
+  </div>
+</div>
+
+<script>
+/* ============ BASE DE DONNÉES CLOUD + FALLBACK LOCALSTORAGE ============ */
+const db = new MultiBrainDB({ app: 'alerte-arnaques-sn' });
+const STORAGE_KEY = 'alerte_arnaques_reports';
+
+const DEFAULT_REPORTS = [
+  { id: 1, type: "Faux Mobile Money", cible: "+221 77 512 34 89", montant: 150000, ville: "Dakar", desc: "Faux SMS Wave annonçant un blocage de compte, me demandant mon code PIN. J'ai refusé et vérifié auprès de mon agence.", nom: "Awa D.", date: "2025-01-14", confirms: 12 },
+  { id: 2, type: "Faux vendeur en ligne", cible: "@tech_deals_dakar (Instagram)", montant: 85000, ville: "Dakar", desc: "Faux vendeur de téléphone. Encaisse le paiement Wave puis bloque l'acheteur. Plusieurs victimes dans son fil de commentaires.", nom: "Mamadou D.", date: "2025-01-12", confirms: 27 },
+  { id: 3, type: "Faux ordre de virement", cible: "compte BICIS 0012 3456 789", montant: 2400000, ville: "Kaolack", desc: "E-mail usurpant un fournisseur habituel demandant de régler une facture sur un nouveau compte bancaire. Document falsifié très réaliste.", nom: "Cheikh N.", date: "2025-01-11", confirms: 5 },
+  { id: 4, type: "Faux investissement", cible: "t.me/crypto_rapide_sn", montant: 500000, ville: "Thiès", desc: "Promesse de doubler un dépôt en 7 jours via un bot Telegram. Le canal a été supprimé après avoir collecté les fonds.", nom: "Anonyme", date: "2025-01-10", confirms: 34 },
+  { id: 5, type: "Appel / faux proche", cible: "+221 78 990 12 34", montant: 200000, ville: "Saint-Louis", desc: "Appel d'un faux cousin 'en détresse' à l'étranger, demandant un transfert urgent. Numéro inconnu, voix modifiée.", nom: "Fatou S.", date: "2025-01-09", confirms: 8 },
+  { id: 6, type: "Phishing par e-mail", cible: "support@orange-money-secure.xyz", montant: 0, ville: "Ziguinchor", desc: "E-mail imitant Orange Money avec un lien vers un faux portail de connexion. Le domaine se termine par .xyz, jamais utilisé par l'opérateur.", nom: "Anonyme", date: "2025-01-08", confirms: 19 }
+];
+
+let reports = [];
+
+/* ============ CHARGEMENT DES DONNÉES ============ */
+async function loadReports() {
+  try {
+    const cloud = await db.collection('reports').get();
+    if (cloud && cloud.length > 0) {
+      reports = cloud;
+    } else {
+      reports = [...DEFAULT_REPORTS];
+      for (const r of DEFAULT_REPORTS) { try { await db.collection('reports').add(r); } catch(e){} }
+    }
+  } catch (e) {
+    const local = localStorage.getItem(STORAGE_KEY);
+    reports = local ? JSON.parse(local) : [...DEFAULT_REPORTS];
+  }
+  renderAlerts();
+}
+
+function persist() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(reports)); } catch(e){}
+}
+
+/* ============ RENDU DES ALERTES ============ */
+function typeColor(type) {
+  const map = {
+    "Faux Mobile Money": "#a78bfa",
+    "Phishing par e-mail": "#60a5fa",
+    "Faux vendeur en ligne": "#34d399",
+    "Faux ordre de virement": "#f87171",
+    "Faux investissement": "#fbbf24",
+    "Appel / faux proche": "#22d3ee"
+  };
+  return map[type] || "#a78bfa";
+}
+
+function fmtMontant(n) {
+  const num = Number(n) || 0;
+  if (num <= 0) return "—";
+  return num.toLocaleString('fr-FR') + " FCFA";
+}
+
+function escapeHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderAlerts() {
+  const grid = document.getElementById('alertsGrid');
+  if (!grid) return;
+  if (reports.length === 0) {
+    grid.innerHTML = '<div class="col-span-full text-center text-slate-500 py-12">Aucun signalement pour le moment. Soyez le premier à alerter la communauté.</div>';
+    return;
+  }
+  grid.innerHTML = reports.map((r, i) => {
+    const color = typeColor(r.type);
+    return `
+    <div class="card-hover bg-[#0d1428] border border-white/10 rounded-2xl p-6 flex flex-col" style="animation: fadeUp 0.6s ease both; animation-delay:${i * 0.07}s">
+      <div class="flex items-start justify-between gap-3 mb-4">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold" style="background:${color}22; color:${color}">
+          <span class="w-1.5 h-1.5 rounded-full" style="background:${color}"></span>
+          ${escapeHtml(r.type)}
+        </span>
+        <span class="text-slate-600 text-xs whitespace-nowrap">${escapeHtml(r.date)}</span>
+      </div>
+      <div class="flex items-center gap-2 mb-3">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#64748b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span class="text-slate-300 text-sm font-medium break-all">${escapeHtml(r.cible)}</span>
+      </div>
+      <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">${escapeHtml(r.desc)}</p>
+      <div class="flex items-center justify-between pt-4 border-t border-white/5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-full bg-gradient-to-br from-[#7C3AED] to-[#2563EB] grid place-items-center text-white font-bold text-[10px]">${escapeHtml((r.nom || 'A').substring(0,2).toUpperCase())}</span>
+          <span class="text-slate-500 text-xs">${escapeHtml(r.nom || 'Anonyme')}</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-slate-500 text-xs">${fmtMontant(r.montant)}</span>
+          <button onclick="confirmReport(${r.id})" class="flex items-center gap-1 text-xs font-semibold text-[#a78bfa] hover:text-white transition">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span id="confirm-${r.id}">${r.confirms || 0}</span>
+          </button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+/* ============ CONFIRMER UN SIGNALEMENT ============ */
+async function confirmReport(id) {
+  const r = reports.find(x => x.id === id);
+  if (!r) return;
+  r.confirms = (r.confirms || 0) + 1;
+  persist();
+  renderAlerts();
+  showToast("Merci ! Votre confirmation renforce cette alerte.");
+  try { await db.collection('reports').doc(id).update({ confirms: r.confirms }); } catch(e){}
+}
+
+/* ============ AJOUTER UN SIGNALEMENT ============ */
+document.getElementById('reportForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const type = document.getElementById('fType').value;
+  const cible = document.getElementById('fCible').value.trim();
+  const montant = parseInt(document.getElementById('fMontant').value) || 0;
+  const ville = document.getElementById('fVille').value.trim() || "Non précisée";
+  const desc = document.getElementById('fDesc').value.trim();
+  const nom = document.getElementById('fNom').value.trim() || "Anonyme";
+
+  if (!type || !cible || !desc) {
+    showToast("Veuillez remplir tous les champs obligatoires.", true);
+    return;
+  }
+
+  const newReport = {
+    id: Date.now(),
+    type, cible, montant, ville, desc, nom,
+    date: new Date().toISOString().split('T')[0],
+    confirms: 0
+  };
+
+  reports.unshift(newReport);
+  persist();
+  renderAlerts();
+  closeModal();
+  this.reset();
+  showToast("Signalement publié. Merci de protéger la communauté !");
+
+  try { await db.collection('reports').add(newReport); } catch(e){}
+
+  document.getElementById('signalements').scrollIntoView({ behavior: 'smooth' });
+});
+
+/* ============ MODAL ============ */
+function openModal() {
+  const m = document.getElementById('reportModal');
+  m.classList.remove('hidden');
+  m.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  const m = document.getElementById('reportModal');
+  m.classList.add('hidden');
+  m.classList.remove('flex');
+  document.body.style.overflow = '';
+}
+document.getElementById('reportModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+/* ============ MENU MOBILE ============ */
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const icon = document.getElementById('menuIcon');
+  menu.classList.toggle('hidden');
+  if (menu.classList.contains('hidden')) {
+    icon.innerHTML = '<line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
+  } else {
+    icon.innerHTML = '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>';
+  }
+}
+
+/* ============ FAQ ACCORDÉON ============ */
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const icon = btn.querySelector('.faq-icon');
+  const isOpen = !answer.classList.contains('hidden');
+  document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+  document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+  if (!isOpen) {
+    answer.classList.remove('hidden');
+    icon.style.transform = 'rotate(180deg)';
+  }
+}
+
+/* ============ TOAST ============ */
+let toastTimer;
+function showToast(msg, isError = false) {
+  const toast = document.getElementById('toast');
+  const msgEl = document.getElementById('toastMsg');
+  const iconWrap = toast.querySelector('span');
+  msgEl.textContent = msg;
+  if (isError) {
+    iconWrap.style.background = 'rgba(248,113,113,0.15)';
+    iconWrap.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#f87171" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+  } else {
+    iconWrap.style.background = 'rgba(52,211,153,0.15)';
+    iconWrap.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#34d399" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+  }
+  toast.classList.remove('hidden');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.add('hidden'), 3500);
+}
+
+/* ============ RÉINITIALISER LA BDD ============ */
+async function resetDB() {
+  if (!confirm("Réinitialiser toutes les données aux signalements par défaut ?")) return;
+  reports = [...DEFAULT_REPORTS];
+  persist();
+  renderAlerts();
+  try {
+    const cloud = await db.collection('reports').get();
+    for (const item of cloud) { try { await db.collection('reports').doc(item.id).delete(); } catch(e){} }
+    for (const r of DEFAULT_REPORTS) { try { await db.collection('reports').add(r); } catch(e){} }
+  } catch(e){}
+  showToast("Données réinitialisées avec succès.");
+}
+window.bfaResetDatabase = resetDB;
+
+/* ============ NAVBAR AU SCROLL ============ */
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 30) {
+    nav.classList.add('shadow-lg', 'shadow-black/30');
+  } else {
+    nav.classList.remove('shadow-lg', 'shadow-black/30');
+  }
+});
+
+/* ============ COMPTEURS ANIMÉS ============ */
+function animateCounters() {
+  document.querySelectorAll('.counter').forEach(el => {
+    const target = parseInt(el.dataset.target) || 0;
+    let current = 0;
+    const step = Math.max(1, Math.ceil(target / 60));
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { current = target; clearInterval(timer); }
+      el.textContent = current.toLocaleString('fr-FR');
+    }, 25);
+  });
+}
+
+/* ============ REVEAL AU SCROLL ============ */
+function initReveal() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+/* ============ INITIALISATION ============ */
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('year').textContent = new Date().getFullYear();
+  loadReports();
+  initReveal();
+  animateCounters();
+});
+</script>
+<script id="bfa-autowire">
+(function(){
+  function bfaWire(){
+    try{
+      if (window._bfaWired) return; window._bfaWired = true;
+
+      // Smooth scroll for in-page anchors
+      Array.from(document.querySelectorAll('a[href^="#"]')).forEach(function(a){
+        if (a.dataset.bfaWired) return; a.dataset.bfaWired = 1;
+        a.addEventListener('click', function(e){
+          try{
+            var id = (this.getAttribute('href') || '').slice(1);
+            if (!id) return;
+            var t = document.getElementById(id);
+            if (t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
+          }catch(er){}
+        });
+      });
+
+      // Auto-hydrate data-count counters
+      Array.from(document.querySelectorAll('[data-count]')).forEach(function(el){
+        var val = el.getAttribute('data-count');
+        if (val && (el.textContent.trim() === '0' || el.textContent.trim() === '')){
+          el.textContent = val;
+        }
+      });
+
+      // Auto-wire buttons and role=button elements
+      Array.from(document.querySelectorAll('button, [role="button"], input[type="button"], input[type="submit"]')).forEach(function(btn){
+        if (btn.dataset.bfaWired) return; btn.dataset.bfaWired = 1;
+        btn.addEventListener('click', function(e){
+          try{
+            var dataset = this.dataset || {};
+            // data-target -> toggle visibility
+            var target = this.getAttribute('data-target') || this.getAttribute('data-toggle') || this.getAttribute('data-href') || this.getAttribute('data-link') || dataset.href || dataset.link;
+            if (target){
+              if (target.indexOf('#') === 0){
+                var el = document.querySelector(target);
+                if (el){ el.classList.toggle('open'); if (el.scrollIntoView) el.scrollIntoView({behavior:'smooth'}); return; }
+              } else if (/^https?:\/\//i.test(target)){
+                window.location.href = target; return;
+              }
+            }
+
+            // If inside a form -> try submit with basic validation
+            var form = this.closest('form');
+            if (form){
+              e.preventDefault();
+              var required = Array.from(form.querySelectorAll('[required]'));
+              var missing = required.filter(function(f){ return !f.value; });
+              if (missing.length){ window.bfaToast('Veuillez remplir tous les champs requis.', '⚠️'); return false; }
+              // Simulate submit
+              window.bfaToast('Formulaire envoyé (simulation)', '✅');
+              return true;
+            }
+
+            // Data action: open-modal
+            if (dataset.bfaAction === 'open-modal' || this.getAttribute('data-bfa-action') === 'open-modal'){
+              var modalId = (this.getAttribute('data-target') || dataset.target || '').replace(/^#/, '');
+              if (modalId){ var modal = document.getElementById(modalId); if (modal){ modal.style.display='block'; modal.classList.add('open'); return; } }
+            }
+
+            // Fallback: if element has href="#" prevent default and show toast
+            if ((this.tagName === 'A' && (this.getAttribute('href')||'').trim() === '#') || (this.getAttribute('href')||'').trim() === ''){
+              e.preventDefault(); window.bfaToast('Action simulée — aucune route configurée', 'ℹ️'); return;
+            }
+
+            // Generic feedback
+            window.bfaToast('Action simulée', 'ℹ️');
+          }catch(e){ console && console.warn && console.warn('bfa-wire click error', e); }
+        });
+      });
+
+      // Auto-wire forms with data-bfa-auto attribute
+      Array.from(document.querySelectorAll('form[data-bfa-auto]')).forEach(function(f){
+        if (f.dataset.bfaAutoWired) return; f.dataset.bfaAutoWired = 1;
+        f.addEventListener('submit', function(e){ e.preventDefault(); window.bfaToast('Formulaire envoyé (simulation)', '✅'); });
+      });
+
+    }catch(e){ console && console.warn && console.warn('bfa-autowire init error', e); }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bfaWire); else bfaWire();
+})();
+</script>
+</body>
+</html>
